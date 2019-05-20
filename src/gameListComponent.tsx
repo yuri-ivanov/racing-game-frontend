@@ -33,7 +33,9 @@ class GameListComponent extends React.Component<{greeting: string}, GameListComp
         const gt = (gameType)?gameType:this.state.gameType;
         this.setState({isLoaded: false});
         GameDataSource.getGames(gt)
-        .then(jsonData => this.setState({gameType:gt, games: jsonData, isLoaded: true}));
+        .then(jsonData => {
+            console.log('games', jsonData);
+            this.setState({gameType:gt, games: jsonData, isLoaded: true})});
     }
 
     onGameTypeChange(e: React.FormEvent<HTMLSelectElement>) {
@@ -45,10 +47,10 @@ class GameListComponent extends React.Component<{greeting: string}, GameListComp
 
         let gameList = <p>Loading ... </p>;
         if(this.state.isLoaded && this.state.games){
-            const upcomingGames = (this.state.games.upcoming)?this.state.games.upcoming.map(gameInfo => 
-                <li key={gameInfo.id} className="game" >{gameInfo.id}: {gameInfo.startTime}</li>
+            let upcomingGames = (this.state.games.upcoming)?this.state.games.upcoming.map(gameInfo => 
+                <li key={gameInfo.id} className="game" >{gameInfo.id}: {gameInfo.startTime.toLocaleString()}</li>
                 ):null;
-            const gameResults = (this.state.games.results)?this.state.games.results.map(gameInfo => 
+            let gameResults = (this.state.games.results)?this.state.games.results.map(gameInfo => 
                 <li key={gameInfo.id} className="game" >
                     <Link to={"/games/"+gameInfo.id}>{gameInfo.id}</Link>
                 </li>
