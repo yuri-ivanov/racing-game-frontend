@@ -3,10 +3,8 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Link, Route, RouteComponentProps } from 'react-router-dom'
 import logo from './atg.svg';
 import './App.css';
-import './gameListComponent';
-import GameListComponent from './gameListComponent';
-import GameComponent from './game';
-import { func } from 'prop-types';
+import './game/gameListComponent';
+import GameListComponent from './game/gameListComponent';
 
 type TParams = { id: string };
 
@@ -26,13 +24,11 @@ function App() {
         <header className="App-header">
           <img src={logo} alt="logo" className="logo"/>
           <span className="title">ATG Games</span>
-          <Link to={'/about'}>About</Link>
         </header>
-        <GameListComponent  greeting="test" />
+        <main>
+          <GameListComponent  greeting="test" />
+        </main>
       </div>
-      <main>
-        <Route path="/about" exact component={about} />
-      </main>
     </Router>
   );
 }

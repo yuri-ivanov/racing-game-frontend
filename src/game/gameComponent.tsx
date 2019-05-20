@@ -1,15 +1,17 @@
 import React from 'react';
-import {Game, GameDataSource} from './GameDataSource';
+import './game.css';
+import GameDataSource from './gameDataSource';
+import * as atg from './atgDomainObjects';
 import { RouteComponentProps } from 'react-router-dom';
 import { resolve } from 'dns';
-import { reject } from 'q';
+import { reject, race } from 'q';
 
 interface GameProps extends RouteComponentProps<any> {
 }
 
 interface GameComponentState{
     loading: boolean;
-    game: Game | null
+    game: atg.Game | null
 }
 
 export class GameComponent extends React.Component<GameProps, GameComponentState> {
@@ -19,8 +21,12 @@ export class GameComponent extends React.Component<GameProps, GameComponentState
         this.state = {game: null, loading: false}; 
     }
 
+    componentDidMount(){
+        const {params} = this.props.match;
+        this.loadGame(params.id);
+    }
 
-    loadGame(gameId:string):Promise<Game> {
+    loadGame(gameId:string):Promise<atg.Game> {
         if(this.state.loading){
             console.log('loading game is in progress');
             return new Promise((resolve, reject) => {
@@ -34,8 +40,15 @@ export class GameComponent extends React.Component<GameProps, GameComponentState
                 return jsonData;});
     }
 
+    renderRaceStarts(starts: Array<atg.RaceStart>){
+        let startsHtml = starts.map(raceStart => (<tr key={raceStart.number}><th>{raceStart.number}</th><td>{raceStart.horse.name}</td><td>{raceStart.driver.firstName} {raceStart.driver.firstName}</td></tr>));
+        return (<table className="table race">
+            <thead><tr><th scope="col">#</th><th scope="col">Horse</th><th scope="col">Rider</th></tr></thead>
+            <tbody>{startsHtml}</tbody>
+        </table>);
+    }
+    
     render() {
-        const {params} = this.props.match;
         if(this.state.loading){
             return (<div>Loading...</div>);
         }
@@ -44,7 +57,11 @@ export class GameComponent extends React.Component<GameProps, GameComponentState
             return null;
         }
         const game = this.state.game;
-        const races = game.races.map(r => <div key={r.name+r.date.toLocaleDateString()}>{r.name}, {r.scheduledStartTime.toLocaleString()}</div>);
+        const races = game.races.map(r => 
+            <div key={r.name+r.date.toLocaleDateString()}>
+                <h3>{r.name}, {r.scheduledStartTime.toLocaleString()}</h3>
+                {this.renderRaceStarts(r.starts)}
+            </div>);
         return (
         <div>
             <div>game id:{game.id}</div>

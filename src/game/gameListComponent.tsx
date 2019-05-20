@@ -1,12 +1,13 @@
 import React from 'react';
-import {Games, GameType, GameDataSource, Game} from './GameDataSource';
-import {GameComponent} from './game';
+import GameDataSource from './gameDataSource';
+import * as atg from './atgDomainObjects';
+import {GameComponent} from './gameComponent';
 import { Route, Link } from 'react-router-dom';
 
 interface GameListComponentState{
-    gameType: GameType, 
-    games: Games | null,
-    currentGame: Game | null,
+    gameType: atg.GameType, 
+    games: atg.Games | null,
+    currentGame: atg.Game | null,
     isLoaded: boolean
 }
 
@@ -15,7 +16,7 @@ class GameListComponent extends React.Component<{greeting: string}, GameListComp
     constructor(props: Readonly<any>){
         super(props);
         this.state = {
-            gameType:GameType.V4, 
+            gameType:atg.GameType.V4, 
             games: {betType:"", upcoming:[], results:[]},
             isLoaded: true,
             currentGame: null
@@ -23,13 +24,10 @@ class GameListComponent extends React.Component<{greeting: string}, GameListComp
     }
 
     componentDidMount() {
-    }
-
-    componentWillMount() {
         this.loadGames();
     }
 
-    loadGames(gameType?:GameType){
+    loadGames(gameType?:atg.GameType){
         const gt = (gameType)?gameType:this.state.gameType;
         this.setState({isLoaded: false});
         GameDataSource.getGames(gt)
@@ -39,24 +37,32 @@ class GameListComponent extends React.Component<{greeting: string}, GameListComp
     }
 
     onGameTypeChange(e: React.FormEvent<HTMLSelectElement>) {
-        this.loadGames(GameType[e.currentTarget.value as keyof typeof GameType]);
+        this.loadGames(atg.GameType[e.currentTarget.value as keyof typeof atg.GameType]);
+    }
+
+    renderGameInfo(gameInfoArray: Array<atg.GameInfo>){
+        if(!gameInfoArray) return null;
+        return gameInfoArray.map( gameInfo => 
+                <div key={gameInfo.id} className="game col" >
+                    <Link to={"/games/"+gameInfo.id}>{gameInfo.startTime.toLocaleString()}</Link>
+                </div>);
+    }
+
+    renderGames(games: atg.Games){
+        let upcomingGames = this.renderGameInfo(games.upcoming);
+        let gameResults = this.renderGameInfo(games.upcoming);
+        return (<div>
+                <h3>upcoming games</h3><div className="container"><div className="row">{upcomingGames}</div></div>
+                <h3>game results</h3><div className="container"><div className="row">{gameResults}</div></div>
+            </div>);
     }
 
     render() {
-        const gameTypeOptions = Object.keys(GameType).map(key => <option key={key} value={key}>{key}</option>);
+        const gameTypeOptions = Object.keys(atg.GameType).map(key => <option key={key} value={key}>{key}</option>);
 
         let gameList = <p>Loading ... </p>;
         if(this.state.isLoaded && this.state.games){
-            let upcomingGames = (this.state.games.upcoming)?this.state.games.upcoming.map(gameInfo => 
-                <li key={gameInfo.id} className="game" >{gameInfo.id}: {gameInfo.startTime.toLocaleString()}</li>
-                ):null;
-            let gameResults = (this.state.games.results)?this.state.games.results.map(gameInfo => 
-                <li key={gameInfo.id} className="game" >
-                    <Link to={"/games/"+gameInfo.id}>{gameInfo.id}</Link>
-                </li>
-                ):null;
-    
-            gameList =<div><h3>upcoming games</h3><ul>{upcomingGames}</ul><h3>game results</h3><ul>{gameResults}</ul></div>;
+            gameList = this.renderGames(this.state.games);
         }
 
         return (

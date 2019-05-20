@@ -11,6 +11,11 @@
   font-size: calc(10px + 2vmin);
   color: white;
   margin-bottom: 1em;
+  padding: 0.2em 2em;
+}
+
+.App main{
+  padding: 0em 2em;
 }
 
 .logo{
@@ -21,3 +26,4 @@
 .App-header .title{
   flex-grow: 1;
 }
+
