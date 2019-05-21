@@ -3,7 +3,8 @@ import GAME_V75_2018_05_12_6_5 from '../json-mock/game';
 import * as atg from './atgDomainObjects';
 
 export default class GameDataSource{
-
+    static baseAPI_URL: string ="http://atg.se"
+    //static baseAPI_URL: string ="" //local proxy for testing
     static useMock: boolean = true;
 
     static jsonToGames(jsonObj: any): atg.Games {
@@ -34,7 +35,7 @@ export default class GameDataSource{
                 resolve(this.jsonToGames(PRODUCTS_V4));
             });
         }
-        return fetch('/services/racinginfo/v1/api/products/'+type)
+        return fetch(GameDataSource.baseAPI_URL+'/services/racinginfo/v1/api/products/'+type)
             .then(response => this.jsonToGames(response.json()) );
     }
 
@@ -47,7 +48,7 @@ export default class GameDataSource{
                 resolve( game );
             });
         }
-        return fetch('/services/racinginfo/v1/api/games/'+id)
+        return fetch(GameDataSource.baseAPI_URL + '/services/racinginfo/v1/api/games/'+id)
             .then(response => this.jsonToGame(response.json()) );
     }
 
