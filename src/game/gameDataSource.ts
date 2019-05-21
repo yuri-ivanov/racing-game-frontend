@@ -2,12 +2,19 @@ import PRODUCTS_V4 from '../json-mock/products-v4';
 import GAME_V75_2018_05_12_6_5 from '../json-mock/game';
 import * as atg from './atgDomainObjects';
 
+
+function makeHeaders(): Headers{
+    var origin = window.location.protocol + '//' + window.location.host;
+    return new Headers({"Origin": origin});
+}
+
 export default class GameDataSource{
-    static baseAPI_URL: string ="http://atg.se"
+    static baseAPI_URL: string ="https://cors-anywhere.herokuapp.com/atg.se"
     //static baseAPI_URL: string ="" //local proxy for testing
-    static useMock: boolean = true;
+    static useMock: boolean = false;
 
     static jsonToGames(jsonObj: any): atg.Games {
+        console.log('json orig', jsonObj);
         const upcoming = (jsonObj.upcoming)? jsonObj.upcoming.map((gameInfo:any) => this.jsonToGameInfo(gameInfo)): [];
         const results  = (jsonObj.results )? jsonObj.results.map( (gameInfo:any) => this.jsonToGameInfo(gameInfo)): [];
         let obj = Object.assign({}, jsonObj, {upcoming: upcoming, results: results}) as atg.Games;
@@ -35,8 +42,8 @@ export default class GameDataSource{
                 resolve(this.jsonToGames(PRODUCTS_V4));
             });
         }
-        return fetch(GameDataSource.baseAPI_URL+'/services/racinginfo/v1/api/products/'+type)
-            .then(response => this.jsonToGames(response.json()) );
+        return fetch(GameDataSource.baseAPI_URL+'/services/racinginfo/v1/api/products/'+type, {headers: makeHeaders()})
+            .then(response => response.json() ).then(json => this.jsonToGames(json));
     }
 
     public static getGame(id: string): Promise<atg.Game>{
@@ -48,8 +55,8 @@ export default class GameDataSource{
                 resolve( game );
             });
         }
-        return fetch(GameDataSource.baseAPI_URL + '/services/racinginfo/v1/api/games/'+id)
-            .then(response => this.jsonToGame(response.json()) );
+        return fetch(GameDataSource.baseAPI_URL + '/services/racinginfo/v1/api/games/'+id, {headers: makeHeaders()})
+            .then(response => response.json() ).then(json => this.jsonToGame(json));
     }
 
 }

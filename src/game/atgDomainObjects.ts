@@ -23,6 +23,7 @@ export interface Game{
 }
 
 export interface Race{
+    id: string,
     date: Date, 
     name: string, 
     scheduledStartTime: Date,

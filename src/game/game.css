@@ -2,6 +2,11 @@ table.race th:first-child{
     width: 1em;
 }
 
-table.race th:nth-child(2){
+table.race th:nth-child(3){
     width: 30%;
+}
+
+.expandable-content-link:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }

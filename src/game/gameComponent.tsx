@@ -2,9 +2,6 @@ import React from 'react';
 import './game.css';
 import GameDataSource from './gameDataSource';
 import * as atg from './atgDomainObjects';
-import { RouteComponentProps } from 'react-router-dom';
-import { resolve, NONAME } from 'dns';
-import { reject, race } from 'q';
 
 interface GameProps {
     gameId: string;
@@ -87,7 +84,7 @@ export class GameComponent extends React.Component<GameProps, GameComponentState
         }
         const game = this.state.game;
         const races = game.races.map(r => 
-            <div className="race-container" key={r.name+r.date.toLocaleDateString()}>
+            <div className="race-container" key={r.id}>
                 <h4>{r.name}</h4>
                 <div className="race-date">{r.scheduledStartTime.toLocaleString()}</div>
                 {this.renderRaceStarts(r.starts)}

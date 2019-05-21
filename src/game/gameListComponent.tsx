@@ -4,9 +4,8 @@ import * as atg from './atgDomainObjects';
 import {GameComponent} from './gameComponent';
 import { Route, Link, RouteComponentProps } from 'react-router-dom';
 
-type TParams = { id: string };
+type TParams = { gameType: string, id: string };
 
-  
 interface GameListComponentState{
     gameType: atg.GameType, 
     games: atg.Games | null,
@@ -14,12 +13,14 @@ interface GameListComponentState{
     isLoaded: boolean
 }
 
-class GameListComponent extends React.Component<{}, GameListComponentState> {
+class GameListComponent extends React.Component<RouteComponentProps<TParams>, GameListComponentState> {
 
     constructor(props: Readonly<any>){
         super(props);
+        const urlParams = this.props.match.params;
+        const urlGameType = atg.GameType[urlParams.gameType as keyof typeof atg.GameType];
         this.state = {
-            gameType:atg.GameType.V4, 
+            gameType: (urlGameType)?urlGameType:atg.GameType.V4, 
             games: {betType:"", upcoming:[], results:[]},
             isLoaded: true,
             currentGame: null
@@ -34,19 +35,22 @@ class GameListComponent extends React.Component<{}, GameListComponentState> {
         const gt = (gameType)?gameType:this.state.gameType;
         this.setState({isLoaded: false});
         GameDataSource.getGames(gt)
-        .then(jsonData => {
-            this.setState({gameType:gt, games: jsonData, isLoaded: true})});
+            .then(jsonData => {
+                this.setState({gameType:gt, games: jsonData, isLoaded: true});
+                console.log('load games', jsonData);
+            });
     }
 
     onGameTypeChange(e: React.FormEvent<HTMLSelectElement>) {
         this.loadGames(atg.GameType[e.currentTarget.value as keyof typeof atg.GameType]);
+        this.props.history.push('/games/'+e.currentTarget.value);
     }
 
     renderGameInfo(gameInfoArray: Array<atg.GameInfo>){
         if(!gameInfoArray) return null;
         return gameInfoArray.map( gameInfo => 
                 <div key={gameInfo.id} className="game col" >
-                    <Link to={"/games/"+gameInfo.id}>{gameInfo.startTime.toLocaleString()}</Link>
+                    <Link to={"/games/"+this.state.gameType+"/"+gameInfo.id}>{gameInfo.startTime.toLocaleString()}</Link>
                 </div>);
     }
 
@@ -88,7 +92,7 @@ class GameListComponent extends React.Component<{}, GameListComponentState> {
                     </select>
                 </label>
                 {gameList}
-                <Route path="/games/:id" component={this.renderGameById} />
+                <Route path="/games/:gameType/:id" component={this.renderGameById} />
             </div>
         );
     }

@@ -1,0 +1,2725 @@
+{
+  "@type": ".Game",
+  "id": "V4_2019-05-22_51_3",
+  "status": "bettable",
+  "pools": {
+    "V4": {
+      "@type": ".MarkingBetPool",
+      "id": "V4_2019-05-22_51_3",
+      "status": "bettable",
+      "timestamp": "2019-05-21 21:45:39",
+      "turnover": 19600,
+      "harry": false,
+      "systemCount": 18
+    }
+  },
+  "races": [
+    {
+      "id": "2019-05-22_51_3",
+      "name": "Redcliffe - Passgångslopp",
+      "date": "2019-05-22",
+      "number": 3,
+      "distance": 1780,
+      "startMethod": "auto",
+      "startTime": "2019-05-22T10:19:00",
+      "scheduledStartTime": "2019-05-22T10:19:00",
+      "prize": "5200 (Pris i AUD)",
+      "terms": ["Alla."],
+      "sport": "trot",
+      "track": { "id": 51, "name": "Redcliffe", "countryCode": "AU" },
+      "status": "upcoming",
+      "pools": {
+        "vinnare": {
+          "@type": ".VinnarePool",
+          "id": "vinnare_2019-05-22_51_3",
+          "status": "bettable",
+          "timestamp": "2019-05-21 21:45:38",
+          "turnover": 1000
+        },
+        "plats": {
+          "@type": ".PlatsPool",
+          "id": "plats_2019-05-22_51_3",
+          "status": "bettable",
+          "timestamp": "2019-05-21 21:45:38",
+          "turnover": 1000
+        }
+      },
+      "starts": [
+        {
+          "number": 1,
+          "postPosition": 1,
+          "distance": 1780,
+          "horse": {
+            "name": "Dynamic Deejay",
+            "age": 7,
+            "sex": "gelding",
+            "trainer": {
+              "firstName": "M G",
+              "lastName": "Dawson",
+              "shortName": "Daw MG",
+              "license": "Okänd"
+            },
+            "money": 229988,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 26,
+                  "earnings": 3459400,
+                  "placement": { "3": 3, "2": 1, "1": 0 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 17,
+                  "earnings": 4422000,
+                  "placement": { "3": 1, "2": 3, "1": 2 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 86,
+                "earnings": 22998800,
+                "placement": { "3": 8, "2": 8, "1": 7 },
+                "records": [],
+                "winPercentage": 813,
+                "placePercentage": 2674,
+                "earningsPerStart": 267427,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 3401 }
+            },
+            "pedigree": {
+              "father": { "name": "Grinfromeartoear" },
+              "mother": { "name": "Miss Discoteque" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "N M",
+            "lastName": "Dawson",
+            "shortName": "Daw NM",
+            "license": "Okänd",
+            "silks": "blå & vit ränder, blå ok, vit d"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 204 }
+          }
+        },
+        {
+          "number": 2,
+          "postPosition": 2,
+          "distance": 1780,
+          "horse": {
+            "name": "Concentration",
+            "age": 5,
+            "sex": "gelding",
+            "trainer": {
+              "firstName": "N W",
+              "lastName": "Copeland",
+              "shortName": "Cop NW",
+              "license": "Okänd"
+            },
+            "money": 232419,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 28,
+                  "earnings": 4486900,
+                  "placement": { "3": 2, "2": 3, "1": 2 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 35,
+                  "earnings": 8794500,
+                  "placement": { "3": 2, "2": 4, "1": 4 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 75,
+                "earnings": 23241900,
+                "placement": { "3": 5, "2": 8, "1": 9 },
+                "records": [],
+                "winPercentage": 1200,
+                "placePercentage": 2933,
+                "earningsPerStart": 309892,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 7733 }
+            },
+            "pedigree": {
+              "father": { "name": "Somebeachsomewhere" },
+              "mother": { "name": "Forest Glory" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "N W",
+            "lastName": "Copeland",
+            "shortName": "Cop NW",
+            "license": "Okänd",
+            "silks": "blå & orange rutor, orange ärmar"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 204 }
+          }
+        },
+        {
+          "number": 3,
+          "postPosition": 3,
+          "distance": 1780,
+          "horse": {
+            "name": "Splash Of Gold",
+            "age": 5,
+            "sex": "mare",
+            "trainer": {
+              "firstName": "G W",
+              "lastName": "Dixon",
+              "shortName": "Dix GW",
+              "license": "Okänd"
+            },
+            "money": 247987,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 32,
+                  "earnings": 13957300,
+                  "placement": { "3": 6, "2": 14, "1": 4 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 26,
+                  "earnings": 6679600,
+                  "placement": { "3": 3, "2": 2, "1": 2 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 77,
+                "earnings": 24798700,
+                "placement": { "3": 11, "2": 16, "1": 8 },
+                "records": [],
+                "winPercentage": 1038,
+                "placePercentage": 4545,
+                "earningsPerStart": 322061,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 1405 }
+            },
+            "pedigree": {
+              "father": { "name": "Gold Dust Beach Ca" },
+              "mother": { "name": "Justasplashofwhite" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "G W",
+            "lastName": "Dixon",
+            "shortName": "Dix GW",
+            "license": "Okänd",
+            "silks": "svart & vit rutor, vit ärmar"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 102 }
+          }
+        },
+        {
+          "number": 4,
+          "postPosition": 4,
+          "distance": 1780,
+          "horse": {
+            "name": "Miraclesdoappen",
+            "age": 5,
+            "sex": "mare",
+            "trainer": {
+              "firstName": "M P",
+              "lastName": "Mcnee",
+              "shortName": "Mcn MP",
+              "license": "Okänd"
+            },
+            "money": 214260,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 24,
+                  "earnings": 8219000,
+                  "placement": { "3": 1, "2": 5, "1": 3 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 25,
+                  "earnings": 8048000,
+                  "placement": { "3": 3, "2": 6, "1": 3 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 68,
+                "earnings": 21426000,
+                "placement": { "3": 5, "2": 15, "1": 8 },
+                "records": [],
+                "winPercentage": 1176,
+                "placePercentage": 4117,
+                "earningsPerStart": 315088,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 1543 }
+            },
+            "pedigree": {
+              "father": { "name": "Mr Feelgood" },
+              "mother": { "name": "True Til The End" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "H L",
+            "lastName": "Barnes",
+            "shortName": "Bar HL",
+            "license": "Okänd",
+            "silks": "röd, vit m & randiga ärmar"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 8878 }
+          }
+        },
+        {
+          "number": 5,
+          "postPosition": 5,
+          "distance": 1780,
+          "horse": {
+            "name": "Ykikafil",
+            "age": 4,
+            "sex": "gelding",
+            "trainer": {
+              "firstName": "R J",
+              "lastName": "March",
+              "shortName": "Mar RJ",
+              "license": "Okänd"
+            },
+            "money": 164175,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 17,
+                  "earnings": 6016700,
+                  "placement": { "3": 2, "2": 4, "1": 1 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 25,
+                  "earnings": 9539200,
+                  "placement": { "3": 3, "2": 2, "1": 4 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 48,
+                "earnings": 16417500,
+                "placement": { "3": 6, "2": 6, "1": 5 },
+                "records": [],
+                "winPercentage": 1041,
+                "placePercentage": 3541,
+                "earningsPerStart": 342031,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 2350 }
+            },
+            "pedigree": {
+              "father": { "name": "Camlach" },
+              "mother": { "name": "Olive Miller" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "D R",
+            "lastName": "March",
+            "shortName": "Mar DR",
+            "license": "Okänd",
+            "silks": "cream, grön maltese kors & armband"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 0 }
+          }
+        },
+        {
+          "number": 6,
+          "postPosition": 6,
+          "distance": 1780,
+          "horse": {
+            "name": "Rafferty Delights",
+            "age": 8,
+            "sex": "gelding",
+            "trainer": {
+              "firstName": "D",
+              "lastName": "Turton",
+              "shortName": "Tur DT",
+              "license": "Okänd"
+            },
+            "money": 468800,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 18,
+                  "earnings": 6518200,
+                  "placement": { "3": 2, "2": 3, "1": 2 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 23,
+                  "earnings": 7212100,
+                  "placement": { "3": 3, "2": 2, "1": 3 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 144,
+                "earnings": 46880000,
+                "placement": { "3": 20, "2": 19, "1": 19 },
+                "records": [],
+                "winPercentage": 1319,
+                "placePercentage": 4027,
+                "earningsPerStart": 325555,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 2673 }
+            },
+            "pedigree": {
+              "father": { "name": "P Forty Seven" },
+              "mother": { "name": "Glamazon" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "Jonah",
+            "lastName": "Hutchinson",
+            "shortName": "Hut Jo",
+            "license": "Okänd",
+            "silks": "gul, röd romber, röd ärmar, yello"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 204 }
+          }
+        },
+        {
+          "number": 7,
+          "postPosition": 9,
+          "distance": 1780,
+          "horse": {
+            "name": "Spondooley",
+            "age": 10,
+            "sex": "gelding",
+            "trainer": {
+              "firstName": "W T",
+              "lastName": "Graham",
+              "shortName": "Gra WT",
+              "license": "Okänd"
+            },
+            "money": 1012717,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 30,
+                  "earnings": 7785000,
+                  "placement": { "3": 2, "2": 7, "1": 1 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 40,
+                  "earnings": 8545700,
+                  "placement": { "3": 7, "2": 8, "1": 1 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 234,
+                "earnings": 101271700,
+                "placement": { "3": 32, "2": 29, "1": 22 },
+                "records": [],
+                "winPercentage": 940,
+                "placePercentage": 3547,
+                "earningsPerStart": 432785,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 496 }
+            },
+            "pedigree": {
+              "father": { "name": "Grinfromeartoear" },
+              "mother": { "name": "Smooth Class" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "Casey",
+            "lastName": "Owen",
+            "shortName": "Owe Ca",
+            "license": "Okänd",
+            "silks": "blå & vit diagonal halvor, lila sta"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 306 }
+          }
+        },
+        {
+          "number": 8,
+          "postPosition": 10,
+          "distance": 1780,
+          "horse": {
+            "name": "Goodtime Stride",
+            "age": 8,
+            "sex": "mare",
+            "trainer": {
+              "firstName": "R M",
+              "lastName": "Gorman",
+              "shortName": "Gor RM",
+              "license": "Okänd"
+            },
+            "money": 813523,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 42,
+                  "earnings": 8279500,
+                  "placement": { "3": 5, "2": 5, "1": 1 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 45,
+                  "earnings": 20100800,
+                  "placement": { "3": 3, "2": 8, "1": 6 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 186,
+                "earnings": 81352300,
+                "placement": { "3": 22, "2": 20, "1": 23 },
+                "records": [],
+                "winPercentage": 1236,
+                "placePercentage": 3494,
+                "earningsPerStart": 437377,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 2153 }
+            },
+            "pedigree": {
+              "father": { "name": "Major In Art" },
+              "mother": { "name": "Ciara" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "R M",
+            "lastName": "Gorman",
+            "shortName": "Gor RM",
+            "license": "Okänd",
+            "silks": "orange, cream band, royal blå ärmar"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 100 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 0 }
+          }
+        },
+        {
+          "number": 9,
+          "postPosition": 11,
+          "distance": 1780,
+          "horse": {
+            "name": "Fire And Ice",
+            "age": 6,
+            "sex": "gelding",
+            "trainer": {
+              "firstName": "V W",
+              "lastName": "Frost",
+              "shortName": "Fro VW",
+              "license": "Okänd"
+            },
+            "money": 669898,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 38,
+                  "earnings": 24469400,
+                  "placement": { "3": 5, "2": 4, "1": 5 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 11,
+                  "earnings": 5474600,
+                  "placement": { "3": 2, "2": 0, "1": 1 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 131,
+                "earnings": 66989800,
+                "placement": { "3": 22, "2": 22, "1": 10 },
+                "records": [],
+                "winPercentage": 763,
+                "placePercentage": 4122,
+                "earningsPerStart": 511372,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 1533 }
+            },
+            "pedigree": {
+              "father": { "name": "Courage Under Fire" },
+              "mother": { "name": "Frostiness" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "G",
+            "lastName": "Geeson",
+            "shortName": "Gee G",
+            "license": "Okänd",
+            "silks": "vit, svart stjär"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 0 }
+          }
+        },
+        {
+          "number": 10,
+          "postPosition": 12,
+          "distance": 1780,
+          "horse": {
+            "name": "Gotothemoon",
+            "age": 5,
+            "sex": "gelding",
+            "trainer": {
+              "firstName": "D J",
+              "lastName": "D Smith",
+              "shortName": "D s DJ",
+              "license": "Okänd"
+            },
+            "money": 87605,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 12,
+                  "earnings": 2507700,
+                  "placement": { "3": 2, "2": 1, "1": 1 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 24,
+                  "earnings": 6220500,
+                  "placement": { "3": 4, "2": 2, "1": 5 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 37,
+                "earnings": 8760500,
+                "placement": { "3": 6, "2": 3, "1": 6 },
+                "records": [],
+                "winPercentage": 1621,
+                "placePercentage": 4054,
+                "earningsPerStart": 236770,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 890 }
+            },
+            "pedigree": {
+              "father": { "name": "Well Said" },
+              "mother": { "name": "Winter Palace" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "M J",
+            "lastName": "Elkins",
+            "shortName": "Elk MJ",
+            "license": "Okänd",
+            "silks": "grön, svart s & bågad ärmar"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 102 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "2019-05-22_51_4",
+      "name": "Redcliffe - Passgångslopp",
+      "date": "2019-05-22",
+      "number": 4,
+      "distance": 1780,
+      "startMethod": "auto",
+      "startTime": "2019-05-22T10:45:00",
+      "scheduledStartTime": "2019-05-22T10:45:00",
+      "prize": "5200 (Pris i AUD)",
+      "terms": ["Alla."],
+      "sport": "trot",
+      "track": { "id": 51, "name": "Redcliffe", "countryCode": "AU" },
+      "status": "upcoming",
+      "pools": {
+        "vinnare": {
+          "@type": ".VinnarePool",
+          "id": "vinnare_2019-05-22_51_4",
+          "status": "bettable",
+          "timestamp": "2019-05-21 21:45:38",
+          "turnover": 0
+        },
+        "plats": {
+          "@type": ".PlatsPool",
+          "id": "plats_2019-05-22_51_4",
+          "status": "bettable",
+          "timestamp": "2019-05-21 21:45:38",
+          "turnover": 1000
+        }
+      },
+      "starts": [
+        {
+          "number": 1,
+          "postPosition": 1,
+          "distance": 1780,
+          "horse": {
+            "name": "Somehowsomeway",
+            "age": 3,
+            "sex": "gelding",
+            "trainer": {
+              "firstName": "W T",
+              "lastName": "Graham",
+              "shortName": "Gra WT",
+              "license": "Okänd"
+            },
+            "money": 2572,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 0,
+                  "earnings": 0,
+                  "placement": { "3": 0, "2": 0, "1": 0 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 4,
+                  "earnings": 257200,
+                  "placement": { "3": 0, "2": 0, "1": 0 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 4,
+                "earnings": 257200,
+                "placement": { "3": 0, "2": 0, "1": 0 },
+                "records": [],
+                "winPercentage": 0,
+                "placePercentage": 0,
+                "earningsPerStart": 64300,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 7515 }
+            },
+            "pedigree": {
+              "father": { "name": "Somebeachsomewhere" },
+              "mother": { "name": "Gee R We There Yet" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "P J",
+            "lastName": "Diebert",
+            "shortName": "Die PJ",
+            "license": "Okänd",
+            "silks": "cerise & vit ränder, svart ärmar"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 2653 }
+          }
+        },
+        {
+          "number": 2,
+          "postPosition": 2,
+          "distance": 1780,
+          "horse": {
+            "name": "Montana Jack",
+            "age": 3,
+            "sex": "gelding",
+            "trainer": {
+              "firstName": "B R",
+              "lastName": "Cargill",
+              "shortName": "Car BR",
+              "license": "Okänd"
+            },
+            "money": 1350,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 0,
+                  "earnings": 0,
+                  "placement": { "3": 0, "2": 0, "1": 0 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 2,
+                  "earnings": 135000,
+                  "placement": { "3": 0, "2": 0, "1": 0 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 2,
+                "earnings": 135000,
+                "placement": { "3": 0, "2": 0, "1": 0 },
+                "records": [],
+                "winPercentage": 0,
+                "placePercentage": 0,
+                "earningsPerStart": 67500,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 800 }
+            },
+            "pedigree": {
+              "father": { "name": "Mr Feelgood" },
+              "mother": { "name": "Manhattan Montana" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "A P",
+            "lastName": "Richardson",
+            "shortName": "Ric AP",
+            "license": "Okänd",
+            "silks": "vit, blå maltese kors & armband"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 306 }
+          }
+        },
+        {
+          "number": 3,
+          "postPosition": 3,
+          "distance": 1780,
+          "horse": {
+            "name": "Zaras All Smiles",
+            "age": 3,
+            "sex": "mare",
+            "trainer": {
+              "firstName": "M J",
+              "lastName": "Butler",
+              "shortName": "But MJ",
+              "license": "Okänd"
+            },
+            "money": 20756,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 3,
+                  "earnings": 183200,
+                  "placement": { "3": 0, "2": 0, "1": 0 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 9,
+                  "earnings": 1892400,
+                  "placement": { "3": 2, "2": 0, "1": 1 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 12,
+                "earnings": 2075600,
+                "placement": { "3": 2, "2": 0, "1": 1 },
+                "records": [],
+                "winPercentage": 833,
+                "placePercentage": 2500,
+                "earningsPerStart": 172966,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 601 }
+            },
+            "pedigree": {
+              "father": { "name": "Cammibest" },
+              "mother": { "name": "Smiling Fibs" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "B W",
+            "lastName": "Barnes",
+            "shortName": "Bar BW",
+            "license": "Okänd",
+            "silks": "mörk blå, röd romber, bågad ärmar"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 0 }
+          }
+        },
+        {
+          "number": 4,
+          "postPosition": 4,
+          "distance": 1780,
+          "horse": {
+            "name": "Valiant Gem",
+            "age": 3,
+            "sex": "gelding",
+            "trainer": {
+              "firstName": "D J",
+              "lastName": "D Smith",
+              "shortName": "D s DJ",
+              "license": "Okänd"
+            },
+            "money": 50895,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 5,
+                  "earnings": 305400,
+                  "placement": { "3": 0, "2": 0, "1": 0 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 11,
+                  "earnings": 4784000,
+                  "placement": { "3": 3, "2": 0, "1": 1 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 16,
+                "earnings": 5089500,
+                "placement": { "3": 3, "2": 0, "1": 1 },
+                "records": [],
+                "winPercentage": 625,
+                "placePercentage": 2500,
+                "earningsPerStart": 318093,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 1055 }
+            },
+            "pedigree": {
+              "father": { "name": "Mr Feelgood" },
+              "mother": { "name": "Gemalot" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "P J",
+            "lastName": "Mcmullen",
+            "shortName": "Mcm PJ",
+            "license": "Okänd",
+            "silks": "grön, svart s & bågad ärmar"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 2755 }
+          }
+        },
+        {
+          "number": 5,
+          "postPosition": 5,
+          "distance": 1780,
+          "horse": {
+            "name": "Butcherfeelgood",
+            "age": 3,
+            "sex": "mare",
+            "trainer": {
+              "firstName": "D J",
+              "lastName": "Ebert",
+              "shortName": "Ebe DJ",
+              "license": "Okänd"
+            },
+            "money": 6218,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 0,
+                  "earnings": 0,
+                  "placement": { "3": 0, "2": 0, "1": 0 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 4,
+                  "earnings": 621800,
+                  "placement": { "3": 0, "2": 1, "1": 0 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 4,
+                "earnings": 621800,
+                "placement": { "3": 0, "2": 1, "1": 0 },
+                "records": [],
+                "winPercentage": 0,
+                "placePercentage": 2500,
+                "earningsPerStart": 155450,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 7634 }
+            },
+            "pedigree": {
+              "father": { "name": "Mr Feelgood" },
+              "mother": { "name": "Bryleigh Miss" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "D J",
+            "lastName": "Ebert",
+            "shortName": "Ebe DJ",
+            "license": "Okänd",
+            "silks": "rosa, brun rutor, rosa ärmar"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 1020 }
+          }
+        },
+        {
+          "number": 6,
+          "postPosition": 6,
+          "distance": 1780,
+          "horse": {
+            "name": "The Casual Goose",
+            "age": 3,
+            "sex": "gelding",
+            "trainer": {
+              "firstName": "M J",
+              "lastName": "Nutley",
+              "shortName": "Nut MJ",
+              "license": "Okänd"
+            },
+            "money": 1485,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 0,
+                  "earnings": 0,
+                  "placement": { "3": 0, "2": 0, "1": 0 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 1,
+                  "earnings": 148500,
+                  "placement": { "3": 0, "2": 0, "1": 0 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 1,
+                "earnings": 148500,
+                "placement": { "3": 0, "2": 0, "1": 0 },
+                "records": [],
+                "winPercentage": 0,
+                "placePercentage": 0,
+                "earningsPerStart": 148500,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 8100 }
+            },
+            "pedigree": {
+              "father": { "name": "Pet Rock" },
+              "mother": { "name": "Madrina Dee" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "H L",
+            "lastName": "Barnes",
+            "shortName": "Bar HL",
+            "license": "Okänd",
+            "silks": "guld, grön rutor, guld ärmar"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 1327 }
+          }
+        },
+        {
+          "number": 7,
+          "postPosition": 9,
+          "distance": 1780,
+          "horse": {
+            "name": "Amillion Promises",
+            "age": 3,
+            "sex": "gelding",
+            "trainer": {
+              "firstName": "G W",
+              "lastName": "Dixon",
+              "shortName": "Dix GW",
+              "license": "Okänd"
+            },
+            "money": 60495,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 6,
+                  "earnings": 5982000,
+                  "placement": { "3": 1, "2": 2, "1": 1 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 1,
+                  "earnings": 67500,
+                  "placement": { "3": 0, "2": 0, "1": 0 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 7,
+                "earnings": 6049500,
+                "placement": { "3": 1, "2": 2, "1": 1 },
+                "records": [],
+                "winPercentage": 1428,
+                "placePercentage": 5714,
+                "earningsPerStart": 864214,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 1320 }
+            },
+            "pedigree": {
+              "father": { "name": "Bettors Delight" },
+              "mother": { "name": "All Promises" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "G W",
+            "lastName": "Dixon",
+            "shortName": "Dix GW",
+            "license": "Okänd",
+            "silks": "röd, svart stjär & ränder"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 1531 }
+          }
+        },
+        {
+          "number": 8,
+          "postPosition": 10,
+          "distance": 1780,
+          "horse": {
+            "name": "De Voyage",
+            "age": 3,
+            "sex": "mare",
+            "trainer": {
+              "firstName": "K M",
+              "lastName": "Rasmussen",
+              "shortName": "Ras KM",
+              "license": "Okänd"
+            },
+            "money": 45975,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 5,
+                  "earnings": 4530000,
+                  "placement": { "3": 1, "2": 0, "1": 1 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 1,
+                  "earnings": 67500,
+                  "placement": { "3": 0, "2": 0, "1": 0 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 6,
+                "earnings": 4597500,
+                "placement": { "3": 1, "2": 0, "1": 1 },
+                "records": [],
+                "winPercentage": 1666,
+                "placePercentage": 3333,
+                "earningsPerStart": 766250,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 1806 }
+            },
+            "pedigree": {
+              "father": { "name": "Major Bronski" },
+              "mother": { "name": "Devoy" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "K M",
+            "lastName": "Rasmussen",
+            "shortName": "Ras KM",
+            "license": "Okänd",
+            "silks": "lila, lila & gul romb ok"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 306 }
+          }
+        },
+        {
+          "number": 9,
+          "postPosition": 11,
+          "distance": 1780,
+          "horse": {
+            "name": "Regalia",
+            "age": 3,
+            "sex": "gelding",
+            "trainer": {
+              "firstName": "A L",
+              "lastName": "Smith",
+              "shortName": "Smi AL",
+              "license": "Okänd"
+            },
+            "money": 23463,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 0,
+                  "earnings": 0,
+                  "placement": { "3": 0, "2": 0, "1": 0 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 9,
+                  "earnings": 2346300,
+                  "placement": { "3": 0, "2": 0, "1": 1 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 9,
+                "earnings": 2346300,
+                "placement": { "3": 0, "2": 0, "1": 1 },
+                "records": [],
+                "winPercentage": 1111,
+                "placePercentage": 1111,
+                "earningsPerStart": 260700,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 3516 }
+            },
+            "pedigree": {
+              "father": { "name": "Mr Feelgood" },
+              "mother": { "name": "Idontneedluck" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "A F",
+            "lastName": "J Sanderson",
+            "shortName": "J s AF",
+            "license": "Okänd",
+            "silks": "guld, röd maltese kors"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 102 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "2019-05-22_51_5",
+      "name": "Redcliffe - Passgångslopp",
+      "date": "2019-05-22",
+      "number": 5,
+      "distance": 1780,
+      "startMethod": "auto",
+      "startTime": "2019-05-22T11:20:00",
+      "scheduledStartTime": "2019-05-22T11:20:00",
+      "prize": "5200 (Pris i AUD)",
+      "terms": ["Alla."],
+      "sport": "trot",
+      "track": { "id": 51, "name": "Redcliffe", "countryCode": "AU" },
+      "status": "upcoming",
+      "pools": {
+        "vinnare": {
+          "@type": ".VinnarePool",
+          "id": "vinnare_2019-05-22_51_5",
+          "status": "bettable",
+          "timestamp": "2019-05-21 21:45:38",
+          "turnover": 0
+        },
+        "plats": {
+          "@type": ".PlatsPool",
+          "id": "plats_2019-05-22_51_5",
+          "status": "bettable",
+          "timestamp": "2019-05-21 21:45:38",
+          "turnover": 1000
+        }
+      },
+      "starts": [
+        {
+          "number": 1,
+          "postPosition": 1,
+          "distance": 1780,
+          "horse": {
+            "name": "Zara Zara Reign",
+            "age": 6,
+            "sex": "mare",
+            "trainer": {
+              "firstName": "K A",
+              "lastName": "Annetts",
+              "shortName": "Ann KA",
+              "license": "Okänd"
+            },
+            "money": 34755,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 28,
+                  "earnings": 1987500,
+                  "placement": { "3": 3, "2": 0, "1": 0 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 22,
+                  "earnings": 1359300,
+                  "placement": { "3": 1, "2": 0, "1": 0 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 57,
+                "earnings": 3475500,
+                "placement": { "3": 4, "2": 0, "1": 0 },
+                "records": [],
+                "winPercentage": 0,
+                "placePercentage": 701,
+                "earningsPerStart": 60973,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 14683 }
+            },
+            "pedigree": {
+              "father": { "name": "Mr Aviator" },
+              "mother": { "name": "Rein Baby" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "N G",
+            "lastName": "Parrish",
+            "shortName": "Par NG",
+            "license": "Okänd",
+            "silks": "vit, lila rand"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 408 }
+          }
+        },
+        {
+          "number": 2,
+          "postPosition": 2,
+          "distance": 1780,
+          "horse": {
+            "name": "Meant To Be Me",
+            "age": 4,
+            "sex": "mare",
+            "trainer": {
+              "firstName": "G J",
+              "lastName": "Gerrard",
+              "shortName": "Ger GJ",
+              "license": "Okänd"
+            },
+            "money": 157996,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 14,
+                  "earnings": 7692400,
+                  "placement": { "3": 1, "2": 1, "1": 3 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 10,
+                  "earnings": 2462700,
+                  "placement": { "3": 3, "2": 1, "1": 1 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 29,
+                "earnings": 15799600,
+                "placement": { "3": 4, "2": 5, "1": 5 },
+                "records": [],
+                "winPercentage": 1724,
+                "placePercentage": 4827,
+                "earningsPerStart": 544813,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 1004 }
+            },
+            "pedigree": {
+              "father": { "name": "Bettors Delight" },
+              "mother": { "name": "Janball" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "A P",
+            "lastName": "Richardson",
+            "shortName": "Ric AP",
+            "license": "Okänd",
+            "silks": "blå & röd rutor, vit ärmar"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 204 }
+          }
+        },
+        {
+          "number": 3,
+          "postPosition": 3,
+          "distance": 1780,
+          "horse": {
+            "name": "Torque With Esteem",
+            "age": 3,
+            "sex": "mare",
+            "trainer": {
+              "firstName": "C A",
+              "lastName": "Turpin",
+              "shortName": "Tur CA",
+              "license": "Okänd"
+            },
+            "money": 44599,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 4,
+                  "earnings": 614000,
+                  "placement": { "3": 0, "2": 0, "1": 0 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 12,
+                  "earnings": 3845900,
+                  "placement": { "3": 1, "2": 1, "1": 2 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 16,
+                "earnings": 4459900,
+                "placement": { "3": 1, "2": 1, "1": 2 },
+                "records": [],
+                "winPercentage": 1250,
+                "placePercentage": 2500,
+                "earningsPerStart": 278743,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 4493 }
+            },
+            "pedigree": {
+              "father": { "name": "Auckland Reactor" },
+              "mother": { "name": "Effective Torque" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "C A",
+            "lastName": "Turpin",
+            "shortName": "Tur CA",
+            "license": "Okänd",
+            "silks": "blå, lila band, vit ok med pur"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 0 }
+          }
+        },
+        {
+          "number": 4,
+          "postPosition": 4,
+          "distance": 1780,
+          "horse": {
+            "name": "Candyfloss",
+            "age": 3,
+            "sex": "mare",
+            "trainer": {
+              "firstName": "V W",
+              "lastName": "Frost",
+              "shortName": "Fro VW",
+              "license": "Okänd"
+            },
+            "money": 84724,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 3,
+                  "earnings": 541400,
+                  "placement": { "3": 1, "2": 0, "1": 0 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 16,
+                  "earnings": 7931000,
+                  "placement": { "3": 2, "2": 2, "1": 4 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 19,
+                "earnings": 8472400,
+                "placement": { "3": 3, "2": 2, "1": 4 },
+                "records": [],
+                "winPercentage": 2105,
+                "placePercentage": 4736,
+                "earningsPerStart": 445915,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 2108 }
+            },
+            "pedigree": {
+              "father": { "name": "Mr Feelgood" },
+              "mother": { "name": "Likeness" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "K M",
+            "lastName": "Rasmussen",
+            "shortName": "Ras KM",
+            "license": "Okänd",
+            "silks": "vit, svart stjär"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 204 }
+          }
+        },
+        {
+          "number": 5,
+          "postPosition": 5,
+          "distance": 1780,
+          "horse": {
+            "name": "Lazy Blaze",
+            "age": 6,
+            "sex": "gelding",
+            "trainer": {
+              "firstName": "I T",
+              "lastName": "Coulson",
+              "shortName": "Cou IT",
+              "license": "Okänd"
+            },
+            "money": 82975,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 16,
+                  "earnings": 3314700,
+                  "placement": { "3": 2, "2": 1, "1": 1 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 9,
+                  "earnings": 1228100,
+                  "placement": { "3": 1, "2": 1, "1": 0 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 43,
+                "earnings": 8297500,
+                "placement": { "3": 3, "2": 6, "1": 3 },
+                "records": [],
+                "winPercentage": 697,
+                "placePercentage": 2790,
+                "earningsPerStart": 192965,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 4166 }
+            },
+            "pedigree": {
+              "father": { "name": "Mr Aviator" },
+              "mother": { "name": "Karbeela" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "I T",
+            "lastName": "Coulson",
+            "shortName": "Cou IT",
+            "license": "Okänd",
+            "silks": "vit, ljus grön band & ärmar"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 0 }
+          }
+        },
+        {
+          "number": 6,
+          "postPosition": 6,
+          "distance": 1780,
+          "horse": {
+            "name": "Overthemoon",
+            "age": 3,
+            "sex": "gelding",
+            "trainer": {
+              "firstName": "G W",
+              "lastName": "Dixon",
+              "shortName": "Dix GW",
+              "license": "Okänd"
+            },
+            "money": 76474,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 9,
+                  "earnings": 2314800,
+                  "placement": { "3": 0, "2": 1, "1": 0 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 11,
+                  "earnings": 5332500,
+                  "placement": { "3": 1, "2": 1, "1": 3 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 20,
+                "earnings": 7647400,
+                "placement": { "3": 1, "2": 2, "1": 3 },
+                "records": [],
+                "winPercentage": 1500,
+                "placePercentage": 3000,
+                "earningsPerStart": 382370,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 2985 }
+            },
+            "pedigree": {
+              "father": { "name": "Mcardle" },
+              "mother": { "name": "Luna Royce" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "G W",
+            "lastName": "Dixon",
+            "shortName": "Dix GW",
+            "license": "Okänd",
+            "silks": "navy blå, vit v, röd ärmar, guld st"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 8265 }
+          }
+        },
+        {
+          "number": 7,
+          "postPosition": 9,
+          "distance": 1780,
+          "horse": {
+            "name": "Sixpenny Red",
+            "age": 3,
+            "sex": "mare",
+            "trainer": {
+              "firstName": "J D",
+              "lastName": "Cremin",
+              "shortName": "Cre JD",
+              "license": "Okänd"
+            },
+            "money": 90845,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 4,
+                  "earnings": 2075600,
+                  "placement": { "3": 0, "2": 0, "1": 1 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 15,
+                  "earnings": 7008900,
+                  "placement": { "3": 2, "2": 3, "1": 1 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 19,
+                "earnings": 9084500,
+                "placement": { "3": 2, "2": 3, "1": 2 },
+                "records": [],
+                "winPercentage": 1052,
+                "placePercentage": 3684,
+                "earningsPerStart": 478131,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 4966 }
+            },
+            "pedigree": {
+              "father": { "name": "Cammibest" },
+              "mother": { "name": "Gotta Be Penny" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "J D",
+            "lastName": "Cremin",
+            "shortName": "Cre JD",
+            "license": "Okänd",
+            "silks": "grön, vit ok, band & band, grön "
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 816 }
+          }
+        },
+        {
+          "number": 8,
+          "postPosition": 10,
+          "distance": 1780,
+          "horse": {
+            "name": "Feelingforarainbow",
+            "age": 3,
+            "sex": "gelding",
+            "trainer": {
+              "firstName": "D L",
+              "lastName": "Russell",
+              "shortName": "Rus DL",
+              "license": "Okänd"
+            },
+            "money": 34047,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 6,
+                  "earnings": 655800,
+                  "placement": { "3": 0, "2": 0, "1": 0 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 12,
+                  "earnings": 2748900,
+                  "placement": { "3": 0, "2": 2, "1": 1 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 18,
+                "earnings": 3404700,
+                "placement": { "3": 0, "2": 2, "1": 1 },
+                "records": [],
+                "winPercentage": 555,
+                "placePercentage": 1666,
+                "earningsPerStart": 189150,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 8466 }
+            },
+            "pedigree": {
+              "father": { "name": "Mr Feelgood" },
+              "mother": { "name": "Timid Lady" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "D L",
+            "lastName": "Russell",
+            "shortName": "Rus DL",
+            "license": "Okänd",
+            "silks": "vit, röd band & armband"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 0 }
+          }
+        },
+        {
+          "number": 9,
+          "postPosition": 11,
+          "distance": 1780,
+          "horse": {
+            "name": "Pops Change",
+            "age": 4,
+            "sex": "gelding",
+            "trainer": {
+              "firstName": "D C",
+              "lastName": "Garrard",
+              "shortName": "Gar DC",
+              "license": "Okänd"
+            },
+            "money": 11883,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 0,
+                  "earnings": 0,
+                  "placement": { "3": 0, "2": 0, "1": 0 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 6,
+                  "earnings": 1188300,
+                  "placement": { "3": 1, "2": 2, "1": 0 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 6,
+                "earnings": 1188300,
+                "placement": { "3": 1, "2": 2, "1": 0 },
+                "records": [],
+                "winPercentage": 0,
+                "placePercentage": 5000,
+                "earningsPerStart": 198050,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 990 }
+            },
+            "pedigree": {
+              "father": { "name": "Changeover" },
+              "mother": { "name": "Unspoiled" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "P J",
+            "lastName": "Diebert",
+            "shortName": "Die PJ",
+            "license": "Okänd",
+            "silks": "vit, blå band, röd stjär, blå "
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 0 }
+          }
+        },
+        {
+          "number": 10,
+          "postPosition": 12,
+          "distance": 1780,
+          "horse": {
+            "name": "Wild About Town",
+            "age": 5,
+            "sex": "gelding",
+            "trainer": {
+              "firstName": "M B",
+              "lastName": "Kendall",
+              "shortName": "Ken MB",
+              "license": "Okänd"
+            },
+            "money": 105519,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 29,
+                  "earnings": 4300500,
+                  "placement": { "3": 3, "2": 1, "1": 1 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 39,
+                  "earnings": 4232300,
+                  "placement": { "3": 2, "2": 1, "1": 2 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 94,
+                "earnings": 10551900,
+                "placement": { "3": 7, "2": 3, "1": 3 },
+                "records": [],
+                "winPercentage": 319,
+                "placePercentage": 1382,
+                "earningsPerStart": 112254,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 5391 }
+            },
+            "pedigree": {
+              "father": { "name": "Town Champion" },
+              "mother": { "name": "Wildlife Princess" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "Zac",
+            "lastName": "Chappenden",
+            "shortName": "Cha Za",
+            "license": "Okänd",
+            "silks": "svart, lila bågar & armband"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 102 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "2019-05-22_51_6",
+      "name": "Redcliffe - Passgångslopp",
+      "date": "2019-05-22",
+      "number": 6,
+      "distance": 2280,
+      "startMethod": "auto",
+      "startTime": "2019-05-22T11:50:00",
+      "scheduledStartTime": "2019-05-22T11:50:00",
+      "prize": "5200 (Pris i AUD)",
+      "terms": ["Alla."],
+      "sport": "trot",
+      "track": { "id": 51, "name": "Redcliffe", "countryCode": "AU" },
+      "status": "upcoming",
+      "pools": {
+        "vinnare": {
+          "@type": ".VinnarePool",
+          "id": "vinnare_2019-05-22_51_6",
+          "status": "bettable",
+          "timestamp": "2019-05-21 21:45:38",
+          "turnover": 0
+        },
+        "plats": {
+          "@type": ".PlatsPool",
+          "id": "plats_2019-05-22_51_6",
+          "status": "bettable",
+          "timestamp": "2019-05-21 21:45:38",
+          "turnover": 0
+        }
+      },
+      "starts": [
+        {
+          "number": 1,
+          "postPosition": 1,
+          "distance": 2280,
+          "horse": {
+            "name": "Bertils Delight",
+            "age": 8,
+            "sex": "mare",
+            "trainer": {
+              "firstName": "J F",
+              "lastName": "Kerr",
+              "shortName": "Ker JF",
+              "license": "Okänd"
+            },
+            "money": 455380,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 31,
+                  "earnings": 6071300,
+                  "placement": { "3": 3, "2": 2, "1": 1 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 28,
+                  "earnings": 4168600,
+                  "placement": { "3": 1, "2": 3, "1": 2 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 145,
+                "earnings": 45538000,
+                "placement": { "3": 22, "2": 15, "1": 10 },
+                "records": [],
+                "winPercentage": 689,
+                "placePercentage": 3241,
+                "earningsPerStart": 314055,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 4666 }
+            },
+            "pedigree": {
+              "father": { "name": "Bettors Delight" },
+              "mother": { "name": "Bertils Wildfire" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "J F",
+            "lastName": "Kerr",
+            "shortName": "Ker JF",
+            "license": "Okänd",
+            "silks": "gul, svart stjär"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 1429 }
+          }
+        },
+        {
+          "number": 2,
+          "postPosition": 2,
+          "distance": 2280,
+          "horse": {
+            "name": "Doolittle Dandy",
+            "age": 7,
+            "sex": "gelding",
+            "trainer": {
+              "firstName": "R W",
+              "lastName": "Hart",
+              "shortName": "Har RW",
+              "license": "Okänd"
+            },
+            "money": 226426,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 31,
+                  "earnings": 9296100,
+                  "placement": { "3": 4, "2": 1, "1": 3 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 28,
+                  "earnings": 4619400,
+                  "placement": { "3": 4, "2": 4, "1": 1 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 105,
+                "earnings": 22642600,
+                "placement": { "3": 15, "2": 9, "1": 8 },
+                "records": [],
+                "winPercentage": 761,
+                "placePercentage": 3047,
+                "earningsPerStart": 215643,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 2100 }
+            },
+            "pedigree": {
+              "father": { "name": "The Globe" },
+              "mother": { "name": "Judala Princess" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "C",
+            "lastName": "Geary",
+            "shortName": "Gea C",
+            "license": "Okänd",
+            "silks": "blå, vit romber"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 612 }
+          }
+        },
+        {
+          "number": 3,
+          "postPosition": 3,
+          "distance": 2280,
+          "horse": {
+            "name": "Itz Sportz Torque",
+            "age": 6,
+            "sex": "gelding",
+            "trainer": {
+              "firstName": "R W",
+              "lastName": "Hart",
+              "shortName": "Har RW",
+              "license": "Okänd"
+            },
+            "money": 275392,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 13,
+                  "earnings": 6210900,
+                  "placement": { "3": 5, "2": 4, "1": 2 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 9,
+                  "earnings": 910500,
+                  "placement": { "3": 0, "2": 1, "1": 0 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 61,
+                "earnings": 27539200,
+                "placement": { "3": 10, "2": 13, "1": 9 },
+                "records": [],
+                "winPercentage": 1475,
+                "placePercentage": 5245,
+                "earningsPerStart": 451462,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 1476 }
+            },
+            "pedigree": {
+              "father": { "name": "Sportswriter" },
+              "mother": { "name": "Torque Of Life" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "P J",
+            "lastName": "Diebert",
+            "shortName": "Die PJ",
+            "license": "Okänd",
+            "silks": "blå, vit romber"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 510 }
+          }
+        },
+        {
+          "number": 4,
+          "postPosition": 4,
+          "distance": 2280,
+          "horse": {
+            "name": "Taffy Boy",
+            "age": 5,
+            "sex": "gelding",
+            "trainer": {
+              "firstName": "M P",
+              "lastName": "Benham",
+              "shortName": "Ben MP",
+              "license": "Okänd"
+            },
+            "money": 130597,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 29,
+                  "earnings": 3307000,
+                  "placement": { "3": 5, "2": 2, "1": 0 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 38,
+                  "earnings": 7374100,
+                  "placement": { "3": 7, "2": 5, "1": 2 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 85,
+                "earnings": 13059700,
+                "placement": { "3": 12, "2": 9, "1": 3 },
+                "records": [],
+                "winPercentage": 352,
+                "placePercentage": 2823,
+                "earningsPerStart": 153643,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 2600 }
+            },
+            "pedigree": {
+              "father": { "name": "Ringleader" },
+              "mother": { "name": "Regina Dillon" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "M J",
+            "lastName": "Elkins",
+            "shortName": "Elk MJ",
+            "license": "Okänd",
+            "silks": "röd, vit stjär, blå ärmar"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 1122 }
+          }
+        },
+        {
+          "number": 5,
+          "postPosition": 5,
+          "distance": 2280,
+          "horse": {
+            "name": "Ark Patrol",
+            "age": 4,
+            "sex": "gelding",
+            "trainer": {
+              "firstName": "G W",
+              "lastName": "Dixon",
+              "shortName": "Dix GW",
+              "license": "Okänd"
+            },
+            "money": 397624,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 14,
+                  "earnings": 21019600,
+                  "placement": { "3": 2, "2": 2, "1": 4 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 22,
+                  "earnings": 5057900,
+                  "placement": { "3": 1, "2": 4, "1": 3 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 45,
+                "earnings": 39762400,
+                "placement": { "3": 6, "2": 8, "1": 9 },
+                "records": [],
+                "winPercentage": 2000,
+                "placePercentage": 5111,
+                "earningsPerStart": 883608,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 2025 }
+            },
+            "pedigree": {
+              "father": { "name": "Grinfromeartoear" },
+              "mother": { "name": "Ark De Jeanne" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "G W",
+            "lastName": "Dixon",
+            "shortName": "Dix GW",
+            "license": "Okänd",
+            "silks": "svart & vit rutor, vit ärmar"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 816 }
+          }
+        },
+        {
+          "number": 6,
+          "postPosition": 6,
+          "distance": 2280,
+          "horse": {
+            "name": "Goalkicker",
+            "age": 4,
+            "sex": "mare",
+            "trainer": {
+              "firstName": "G F",
+              "lastName": "Dwyer",
+              "shortName": "Dwy GF",
+              "license": "Okänd"
+            },
+            "money": 192912,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 6,
+                  "earnings": 2882600,
+                  "placement": { "3": 1, "2": 0, "1": 1 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 30,
+                  "earnings": 16408500,
+                  "placement": { "3": 6, "2": 7, "1": 6 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 36,
+                "earnings": 19291200,
+                "placement": { "3": 7, "2": 7, "1": 7 },
+                "records": [],
+                "winPercentage": 1944,
+                "placePercentage": 5833,
+                "earningsPerStart": 535866,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 663 }
+            },
+            "pedigree": {
+              "father": { "name": "Sportswriter" },
+              "mother": { "name": "Jolaurella" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "J D",
+            "lastName": "Cremin",
+            "shortName": "Cre JD",
+            "license": "Okänd",
+            "silks": "röd, vit korsade band & ärmar, bla"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 1429 }
+          }
+        },
+        {
+          "number": 7,
+          "postPosition": 9,
+          "distance": 2280,
+          "horse": {
+            "name": "Megiddo",
+            "age": 4,
+            "sex": "gelding",
+            "trainer": {
+              "firstName": "C A",
+              "lastName": "Turpin",
+              "shortName": "Tur CA",
+              "license": "Okänd"
+            },
+            "money": 35809,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 5,
+                  "earnings": 1025600,
+                  "placement": { "3": 1, "2": 1, "1": 0 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 12,
+                  "earnings": 2555300,
+                  "placement": { "3": 2, "2": 0, "1": 1 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 17,
+                "earnings": 3580900,
+                "placement": { "3": 3, "2": 1, "1": 1 },
+                "records": [],
+                "winPercentage": 588,
+                "placePercentage": 2941,
+                "earningsPerStart": 210641,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 1116 }
+            },
+            "pedigree": {
+              "father": { "name": "Sportswriter" },
+              "mother": { "name": "Conrod Bent" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "P J",
+            "lastName": "Mcmullen",
+            "shortName": "Mcm PJ",
+            "license": "Okänd",
+            "silks": "blå, lila band, vit ok med pur"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 510 }
+          }
+        },
+        {
+          "number": 8,
+          "postPosition": 10,
+          "distance": 2280,
+          "horse": {
+            "name": "Betting Baron",
+            "age": 5,
+            "sex": "gelding",
+            "trainer": {
+              "firstName": "Charlie",
+              "lastName": "Chiang",
+              "shortName": "Chi Ch",
+              "license": "Okänd"
+            },
+            "money": 233724,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 38,
+                  "earnings": 12151700,
+                  "placement": { "3": 8, "2": 1, "1": 4 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 17,
+                  "earnings": 4425200,
+                  "placement": { "3": 0, "2": 6, "1": 1 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 69,
+                "earnings": 23372400,
+                "placement": { "3": 9, "2": 9, "1": 9 },
+                "records": [],
+                "winPercentage": 1304,
+                "placePercentage": 3913,
+                "earningsPerStart": 338730,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 788 }
+            },
+            "pedigree": {
+              "father": { "name": "Bettors Delight" },
+              "mother": { "name": "Versace Woman" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "H L",
+            "lastName": "Barnes",
+            "shortName": "Bar HL",
+            "license": "Okänd",
+            "silks": "gul, mörk blå m"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 510 }
+          }
+        },
+        {
+          "number": 9,
+          "postPosition": 11,
+          "distance": 2280,
+          "horse": {
+            "name": "Bukthsystem",
+            "age": 9,
+            "sex": "gelding",
+            "trainer": {
+              "firstName": "D B",
+              "lastName": "Warburton",
+              "shortName": "War DB",
+              "license": "Okänd"
+            },
+            "money": 230329,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 5,
+                  "earnings": 617200,
+                  "placement": { "3": 1, "2": 1, "1": 0 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 34,
+                  "earnings": 6172300,
+                  "placement": { "3": 4, "2": 6, "1": 2 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 147,
+                "earnings": 23032900,
+                "placement": { "3": 20, "2": 19, "1": 6 },
+                "records": [],
+                "winPercentage": 408,
+                "placePercentage": 3061,
+                "earningsPerStart": 156686,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 2183 }
+            },
+            "pedigree": {
+              "father": { "name": "P B Bullville" },
+              "mother": { "name": "Tis A Fake" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "Casey",
+            "lastName": "Owen",
+            "shortName": "Owe Ca",
+            "license": "Okänd",
+            "silks": "röd, guld romber"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 2449 }
+          }
+        },
+        {
+          "number": 10,
+          "postPosition": 12,
+          "distance": 2280,
+          "horse": {
+            "name": "Traces Of Tara",
+            "age": 4,
+            "sex": "mare",
+            "trainer": {
+              "firstName": "D J",
+              "lastName": "D Smith",
+              "shortName": "D s DJ",
+              "license": "Okänd"
+            },
+            "money": 96227,
+            "statistics": {
+              "years": {
+                "2018": {
+                  "starts": 8,
+                  "earnings": 1244200,
+                  "placement": { "3": 1, "2": 0, "1": 0 },
+                  "records": []
+                },
+                "2019": {
+                  "starts": 8,
+                  "earnings": 2433800,
+                  "placement": { "3": 1, "2": 0, "1": 2 },
+                  "records": []
+                }
+              },
+              "life": {
+                "starts": 25,
+                "earnings": 9622700,
+                "placement": { "3": 2, "2": 1, "1": 4 },
+                "records": [],
+                "winPercentage": 1600,
+                "placePercentage": 2800,
+                "earningsPerStart": 384908,
+                "startPoints": 0
+              },
+              "lastFiveStarts": { "averageOdds": 640 }
+            },
+            "pedigree": {
+              "father": { "name": "Artistic Fella" },
+              "mother": { "name": "Taralinger" }
+            },
+            "foreignOwned": true
+          },
+          "driver": {
+            "id": 0,
+            "firstName": "Okänd",
+            "lastName": "Kusk",
+            "shortName": "Zzz Zz",
+            "license": "Okänd",
+            "silks": "grön, svart s & bågad ärmar"
+          },
+          "pools": {
+            "vinnare": { "@type": ".VinnareStartPool", "odds": 9999 },
+            "plats": {
+              "@type": ".PlatsStartPool",
+              "minOdds": 100,
+              "maxOdds": 9999
+            },
+            "V4": { "@type": ".MarkingBetStartPool", "betDistribution": 612 }
+          }
+        }
+      ]
+    }
+  ],
+  "version": 1558468064330
+}
