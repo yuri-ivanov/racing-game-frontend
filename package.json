@@ -36,7 +36,7 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://www.atg.se",
+  "__proxy": "https://www.atg.se",
   "devDependencies": {
     "@types/query-string": "^6.3.0"
   }
