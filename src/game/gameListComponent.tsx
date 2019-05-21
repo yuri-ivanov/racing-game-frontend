@@ -2,8 +2,11 @@ import React from 'react';
 import GameDataSource from './gameDataSource';
 import * as atg from './atgDomainObjects';
 import {GameComponent} from './gameComponent';
-import { Route, Link } from 'react-router-dom';
+import { Route, Link, RouteComponentProps } from 'react-router-dom';
 
+type TParams = { id: string };
+
+  
 interface GameListComponentState{
     gameType: atg.GameType, 
     games: atg.Games | null,
@@ -11,7 +14,7 @@ interface GameListComponentState{
     isLoaded: boolean
 }
 
-class GameListComponent extends React.Component<{greeting: string}, GameListComponentState> {
+class GameListComponent extends React.Component<{}, GameListComponentState> {
 
     constructor(props: Readonly<any>){
         super(props);
@@ -32,7 +35,6 @@ class GameListComponent extends React.Component<{greeting: string}, GameListComp
         this.setState({isLoaded: false});
         GameDataSource.getGames(gt)
         .then(jsonData => {
-            console.log('games', jsonData);
             this.setState({gameType:gt, games: jsonData, isLoaded: true})});
     }
 
@@ -52,11 +54,24 @@ class GameListComponent extends React.Component<{greeting: string}, GameListComp
         let upcomingGames = this.renderGameInfo(games.upcoming);
         let gameResults = this.renderGameInfo(games.upcoming);
         return (<div>
-                <h3>upcoming games</h3><div className="container"><div className="row">{upcomingGames}</div></div>
-                <h3>game results</h3><div className="container"><div className="row">{gameResults}</div></div>
+                <section>
+                    <h2>upcoming games</h2>
+                    <div className="container"><div className="row">{upcomingGames}</div></div>
+                </section>
+                <hr></hr>
+                <section>
+                    <h2>game results</h2>
+                    <div className="container"><div className="row">{gameResults}</div></div>
+                </section>
+                <hr></hr>
             </div>);
     }
 
+    renderGameById ({match}: RouteComponentProps<TParams>) {
+        console.log('render game', match.params.id);
+        return (<div><GameComponent gameId={match.params.id}></GameComponent></div>);
+    } 
+    
     render() {
         const gameTypeOptions = Object.keys(atg.GameType).map(key => <option key={key} value={key}>{key}</option>);
 
@@ -67,11 +82,13 @@ class GameListComponent extends React.Component<{greeting: string}, GameListComp
 
         return (
             <div>
-                <select onChange={ e => this.onGameTypeChange(e)} value={this.state.gameType}>
-                    {gameTypeOptions}
-                </select>
+                <label >Select game type
+                    <select id="gameTypeSelectControl" onChange={ e => this.onGameTypeChange(e)} value={this.state.gameType}>
+                        {gameTypeOptions}
+                    </select>
+                </label>
                 {gameList}
-                <Route path="/games/:id" component={GameComponent} />
+                <Route path="/games/:id" component={this.renderGameById} />
             </div>
         );
     }
