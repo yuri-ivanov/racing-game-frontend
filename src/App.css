@@ -27,3 +27,6 @@
   flex-grow: 1;
 }
 
+.App-header label {
+  padding: 0rem 0.5rem;
+}
